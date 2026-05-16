@@ -122,8 +122,8 @@ Role name: LambdaEc2FullAccess
 ## Step 4: Attach IAM Role to Lambda
 Go to Lambda → Configuration → Permissions
 Attach role: LambdaEc2FullAccess
-![Role Attach 1](images/role-attach-1.webp)
-![Role Attach 2](images/role-attach-2.webp)
+![Role-attach 1](images/role-attach-1.webp)
+![Role-attach 2](images/role-attach-2.webp)
 
 ## Step 5: Test Lambda Function
 {
@@ -146,13 +146,13 @@ You will see:
 Snapshot ID created
 Status: Completed
 Progress: 100%
-![Verify Snapshot](images/verify-snapshot.webp)
+![verify-Snapshot](images/verify-snapshot.webp)
 
 ## Step 7: Automate Using EventBridge
 Go to EventBridge → Rules → Create Rule
 Type: Scheduled Rule
 Name: EBS-Backup-Rule
-![Automate Using EventBridge](images/automate-using-eventbridge.webp)
+![automate-using-eventbridge](images/automate-using-eventbridge.webp)
 
 
 ## Step 8: Schedule Configuration
@@ -160,7 +160,7 @@ Name: EBS-Backup-Rule
 Example:
 
 rate(15 days)
-![Schedule Image](images/schedule-image.webp)
+![schedule-image](images/schedule-image.webp)
 
 ## Step 9: Select Target
 Target type: AWS service
@@ -170,12 +170,12 @@ Function: Volume-Backup
 Permissions:
 Create new role (recommended)
 
-![Target Image](images/target-image.webp)
+![target-image](images/target-image.webp)
 
 ## Step 10: Review & Create
 Verify configuration
 Click Create rule
-![Review Image](images/review.webp)
+![review-image](images/review.webp)
 
 
 ## Final Result
@@ -184,4 +184,4 @@ Automatically runs every 15 days
 Scans all AWS regions
 Creates snapshots of all active EBS volumes
 
-![Verify Snapshot](images/verify-snapshot.webp)
+![verify-Snapshot](images/verify-snapshot.webp)
