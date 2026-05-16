@@ -124,10 +124,10 @@ Role name: LambdaEc2FullAccess
 Go to Lambda → Configuration → Permissions → Attach role: LambdaEc2FullAccess
 
 #### Role Attachment 1
-![Role Attach 1](images/role-attach-1.webp)
+![role-attach 1](images/role-attach1.webp)
 
 #### Role Attachment 2
-![Role Attach 2](images/role-attach-2.webp)
+![role-attach 2](images/role-attach2.webp)
 
 ## Step 5: Test Lambda Function
 {
