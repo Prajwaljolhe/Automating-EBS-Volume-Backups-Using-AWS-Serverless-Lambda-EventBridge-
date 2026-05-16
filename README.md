@@ -54,7 +54,9 @@ Required permissions:
 ---
 
 ## 🏗️ Architecture Diagram
-[text](images/Architecture%20Diagram.webp)
+## 🏗️ Architecture Diagram
+
+![Architecture Diagram](images/Architecture Diagram.webp)p)
 
 ### 🔄 Workflow
 1. EventBridge triggers Lambda on schedule  
