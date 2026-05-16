@@ -124,7 +124,7 @@ Role name: LambdaEc2FullAccess
 Go to Lambda → Configuration → Permissions → Attach role: LambdaEc2FullAccess
 
 #### Role Attachment 1
-![role-attach 1](images/role-attach1.webp)
+![Role Attach 2](images/role-attach-2.webp)
 
 #### Role Attachment 2
 ![role-attach 2](images/role-attach2.webp)
