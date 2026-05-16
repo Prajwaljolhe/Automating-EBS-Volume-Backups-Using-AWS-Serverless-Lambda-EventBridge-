@@ -119,12 +119,15 @@ AmazonEC2FullAccess (for testing)
 
 Role name: LambdaEc2FullAccess
 
-## Step 4: Attach IAM Role to Lambda
-Go to Lambda → Configuration → Permissions
-Attach role: LambdaEc2FullAccess
+### Step 4: Attach IAM Role to Lambda
 
-![role-attach 1](images/role-attach-1.webp)
-![role-attach 2](images/role-attach-2.webp)
+Go to Lambda → Configuration → Permissions → Attach role: LambdaEc2FullAccess
+
+#### Role Attachment 1
+![Role Attach 1](images/role-attach-1.webp)
+
+#### Role Attachment 2
+![Role Attach 2](images/role-attach-2.webp)
 
 ## Step 5: Test Lambda Function
 {
