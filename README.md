@@ -122,8 +122,9 @@ Role name: LambdaEc2FullAccess
 ## Step 4: Attach IAM Role to Lambda
 Go to Lambda → Configuration → Permissions
 Attach role: LambdaEc2FullAccess
-![Role-attach 1](images/role-attach-1.webp)
-![Role-attach 2](images/role-attach-2.webp)
+
+![role-attach 1](images/role-attach-1.webp)
+![role-attach 2](images/role-attach-2.webp)
 
 ## Step 5: Test Lambda Function
 {
@@ -146,12 +147,14 @@ You will see:
 Snapshot ID created
 Status: Completed
 Progress: 100%
+
 ![verify-Snapshot](images/verify-snapshot.webp)
 
 ## Step 7: Automate Using EventBridge
 Go to EventBridge → Rules → Create Rule
 Type: Scheduled Rule
 Name: EBS-Backup-Rule
+
 ![automate-using-eventbridge](images/automate-using-eventbridge.webp)
 
 
@@ -160,6 +163,7 @@ Name: EBS-Backup-Rule
 Example:
 
 rate(15 days)
+
 ![schedule-image](images/schedule-image.webp)
 
 ## Step 9: Select Target
@@ -175,6 +179,7 @@ Create new role (recommended)
 ## Step 10: Review & Create
 Verify configuration
 Click Create rule
+
 ![review-image](images/review.webp)
 
 
