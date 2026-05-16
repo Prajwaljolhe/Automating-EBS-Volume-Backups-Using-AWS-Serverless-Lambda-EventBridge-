@@ -51,12 +51,8 @@ Required permissions:
 - Acts as a scheduler (cron job alternative)
 - Triggers Lambda automatically at defined intervals (e.g., every 15 days)
 
----
-
 ## 🏗️ Architecture Diagram
-## 🏗️ Architecture Diagram
-
-![Architecture Diagram](images/Architecture Diagram.webp)p)
+![Architecture Diagram](images/Architecture Diagram.webp)
 
 ### 🔄 Workflow
 1. EventBridge triggers Lambda on schedule  
