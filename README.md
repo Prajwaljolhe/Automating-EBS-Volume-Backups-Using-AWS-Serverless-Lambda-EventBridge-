@@ -52,7 +52,7 @@ Required permissions:
 - Triggers Lambda automatically at defined intervals (e.g., every 15 days)
 
 ## 🏗️ Architecture Diagram
-![Architecture Diagram](images/Architecture Diagram.webp)
+![Architecture Diagram](images/architecture-diagram.webp)
 
 ### 🔄 Workflow
 1. EventBridge triggers Lambda on schedule  
