@@ -1,6 +1,6 @@
 #  Automating EBS Volume Backups Using AWS Serverless (Lambda + EventBridge)
 
-## 📌 Project Overview
+##  Project Overview
 
 Backing up cloud resources is essential for ensuring **data durability, fault tolerance, and disaster recovery**.
 
@@ -9,7 +9,7 @@ In this project, I built a **fully automated serverless EBS backup system** usin
 This solution eliminates manual backup tasks and ensures **scheduled, automated snapshots of all active EBS volumes across AWS regions**, in a cost-effective and scalable way.
 
 
-## 🎯 Project Goals
+##  Project Goals
 
 - Automate EBS volume backups
 - Eliminate manual snapshot creation
@@ -18,26 +18,26 @@ This solution eliminates manual backup tasks and ensures **scheduled, automated 
 - Ensure secure access using IAM roles
 
 
-## ☁️ AWS Services Used
+##  AWS Services Used
 
-### 🔹 Amazon EC2 & EBS
+### Amazon EC2 & EBS
 - EC2 provides virtual machines
 - EBS provides persistent block storage attached to EC2
 - Snapshots are used to back up EBS volumes
 
 
-### 🔹 AWS Lambda
+###  AWS Lambda
 - Serverless compute service
 - Executes backup automation logic
 - Automatically scales based on demand
 
-👉 Responsibilities:
+ Responsibilities:
 - Fetch EBS volumes
 - Create snapshots
 - Log backup status
 
 
-### 🔹 AWS IAM (Identity and Access Management)
+### AWS IAM (Identity and Access Management)
 - Provides secure access control
 - Lambda uses IAM role to access AWS resources
 
@@ -47,14 +47,14 @@ Required permissions:
 
 ---
 
-### 🔹 Amazon EventBridge
+###  Amazon EventBridge
 - Acts as a scheduler (cron job alternative)
 - Triggers Lambda automatically at defined intervals (e.g., every 15 days)
 
-## 🏗️ Architecture Diagram
+##  Architecture Diagram
 ![Architecture Diagram](images/architecture-diagram.webp)
 
-### 🔄 Workflow
+###  Workflow
 1. EventBridge triggers Lambda on schedule  
 2. Lambda scans all AWS regions  
 3. Identifies active EBS volumes  
@@ -63,7 +63,7 @@ Required permissions:
 
 ---
 
-## 🧑‍💻 Step-by-Step Implementation
+##  Step-by-Step Implementation
 
 ### Step 1: Create Lambda Function
 - Go to AWS Lambda Console
@@ -124,10 +124,10 @@ Role name: LambdaEc2FullAccess
 Go to Lambda → Configuration → Permissions → Attach role: LambdaEc2FullAccess
 
 #### Role Attachment 1
-![Role Attach 2](images/role-attach-2.webp)
+![role-attach-2](images/role-attach-2.webp)
 
 #### Role Attachment 2
-![role-attach 2](images/role-attach2.webp)
+![](/role-attach-1.webp)
 
 ## Step 5: Test Lambda Function
 {
